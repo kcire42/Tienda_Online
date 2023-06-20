@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+         :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #838181cc;
+            --text-input-field: #f7f7f7;
+            --hospital-gree: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .cards-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,240px);
+            gap: 26px;
+            place-content: center;
+        }
+        .product-card{
+            width: 240px;
+        }
+        .product-card img{
+            width: 180px;
+            height: 180px;
+            border-radius: 20px;
+            object-fit: contain;
+
+        }
+        .product-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .product-info figure img{
+            width: 35px;
+            height: 35px;
+            
+        }
+        .product-info figure{
+            margin-top: 0px;
+            margin-left: 10px;
+        }
+        .product-info div p:nth-child(1){
+            font-size: var(--md);
+            font-weight: bold;
+            margin-top: 0px;
+            margin-bottom: 4px;
+        }
+        .product-info div p:nth-child(2){
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+
+        }
+        @media (max-width: 640px) {
+            .cards-container{
+                display: grid;
+                grid-template-columns: repeat(auto-fill,100px);
+            }
+            .product-card{
+                width: 100px;
+            }
+            .product-card img{
+                width: 100px;
+                height: 100px;
+            }
+            .product-info figure{
+            margin: 5px;
+            }
+            .product-info figure img{
+                width: 20px;
+                height: 20px;
+            }
+            .product-info div p:nth-child(1){
+            font-size: 10px;
+            font-weight: bold;
+            margin-top: 0px;
+            margin-bottom: 4px;
+            }
+            .product-info div p:nth-child(2){
+            font-size: 8px;
+            color: var(--very-light-pink);
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+            <div class="product-card">
+                <img src="./accets/Consola_PS5.jpg" alt="Consola PS5">
+                <div class="product-info">
+                    <div>
+                        <p class="price">$ 14,000,00</p>
+                        <p class="description">Consola PS5</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="agregar a carrito de compra">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./accets/control_ps5.jpg" alt="Control PS5">
+                <div class="product-info">
+                    <div>
+                        <p class="price">$ 1,500,00</p>
+                    <p class="description">Control PS5</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="agregar a carrito de compra">
+                    </figure>
+            </div>
+            </div>
+            <div class="product-card">
+                <img src="./accets/control_switch.jpg" alt="Control Switch">
+                <div class="product-info">
+                    <div>
+                        <p class="price">$ 2,000,00</p>
+                        <p class="description">Control Switch</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="agregar a carrito de compra">
+                    </figure>    
+                </div>
+                
+            </div>
+            <div class="product-card">
+                <img src="./accets/control_xbox_X.jpg" alt="Control Series X">
+                <div class="product-info">
+                    <div>
+                        <p class="price">$ 1,500,00</p>
+                        <p class="description">Control Series X</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="agregar a carrito de compra">
+                    </figure>   
+                </div>
+               
+            </div>
+            <div class="product-card">
+                <img src="./accets/headseat_PS5.jpg" alt="Consola PS5">
+                <div class="product-info">
+                    <div>
+                        <p class="price">$ 2,200,00</p>
+                        <p class="description">Headseat PS5</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="agregar a carrito de compra">
+                    </figure>    
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./accets/switch_Lite.jpg" alt="Consola PS5">
+                <div class="product-info">
+                    <div>
+                        <p class="price">$ 5,000,00</p>
+                        <p class="description">Switch Lite</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="agregar a carrito de compra">
+                    </figure>
+                </div>
+                
+            </div>
+            <div class="product-card">
+                <img src="./accets/Switch_Oled.jpg" alt="Consola PS5">
+                <div class="product-info">
+                    <div>
+                        <p class="price">$ 10,000,00</p>
+                        <p class="description">Switch Oled</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="agregar a carrito de compra">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./accets/switch_standard.jpg" alt="Consola PS5">
+                <div class="product-info">
+                    <div>
+                        <p class="price">$ 8,000,00</p>
+                        <p class="description">Switch Standard</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="agregar a carrito de compra">
+                    </figure>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./accets/Xbox_series_S.jpg" alt="Consola PS5">
+                <div class="product-info">
+                    <div>
+                        <p class="price">$ 7,000,00</p>
+                        <p class="description">Xbox Series S</p>
+                    </div>
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="agregar a carrito de compra">
+                    </figure>
+                </div>
+               
+            </div>
+            <div class="product-card">
+                <img src="./accets/Xbox_series_X.jpg" alt="Consola PS5">
+                <div class="product-info">
+                    <div>
+                        <p class="price">$ 14,000,00</p>
+                        <p class="description">Consola Xbox Series X</p>
+                    </div>
+                     <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="agregar a carrito de compra">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #838181cc;
+            --text-input-field: #f7f7f7;
+            --hospital-gree: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .my_orders{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .my_orders_container{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+        }
+        .my-order-content{
+            display: flex;
+            flex-direction: column;
+        }
+        .title{
+            font-size: var(--lg);
+            margin-bottom: 40px;
+        }
+        .shopping-cart{
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            margin-bottom: 12px;
+            gap: 16px;
+            
+        }
+        .shopping-cart p:nth-child(1){
+            display: flex;
+            flex-direction: column;
+        }
+        .shopping-cart p span:nth-child(1){
+            color: var(--black);
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        .shopping-cart p span:nth-child(2){
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+        }
+        .shopping-cart p:nth-child(2){
+            color: var(--black);
+            font-size: var(--md);
+            font-weight: bold;
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <div class="my_orders">
+        <div class="my_orders_container">
+            <h1 class="title">My orders</h1>
+            <div class="my-order-content">
+                <div class="shopping-cart">
+                    <p>
+                        <span> 03.06.2023</span>
+                        <span> 6 articles</span>
+                    </p>
+                    <p>$ 42,000.00</p>
+                    <img src="./icons/flechita.svg" alt="flechita">
+                </div>
+                <div class="shopping-cart">
+                    <p>
+                        <span> 04.06.2023</span>
+                        <span> 3 articles</span>
+                    </p>
+                    <p>$ 2,000.00</p>
+                    <img src="./icons/flechita.svg" alt="flechita">
+                </div>
+                <div class="shopping-cart">
+                    <p>
+                        <span> 05.06.2023</span>
+                        <span> 3 articles</span>
+                    </p>
+                    <p>$ 20,000.00</p>
+                    <img src="./icons/flechita.svg" alt="flechita">
+                </div>
+                <div class="shopping-cart">
+                    <p>
+                        <span> 06.06.2023</span>
+                        <span> 1 articles</span>
+                    </p>
+                    <p>$ 7,000.00</p>
+                    <img src="./icons/flechita.svg" alt="flechita">
+                </div>
+                <div class="shopping-cart">
+                    <p>
+                        <span> 03.06.2023</span>
+                        <span> 4 articles</span>
+                    </p>
+                    <p>$ 15,000.00</p>
+                    <img src="./icons/flechita.svg" alt="flechita">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

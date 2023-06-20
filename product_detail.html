@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+         :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #838181cc;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .product-detail{
+            width: 360px;
+            padding-bottom: 24px;   
+            position: absolute;
+        }
+        .product-detail > img:nth-child(1){
+            position: absolute;
+            background: var(--very-light-pink);
+            top: 14px;
+            left: 14px;
+            right: 0;
+            width: 14px;
+            height: 14px;
+            padding: 4px;
+            z-index: 2;
+            border-radius: 18px;
+            
+        }
+        .product-detail > img:nth-child(1):hover{
+            cursor: pointer;
+        }
+        .product-detail > img:nth-child(2){
+            width: 100%;
+            height: 300px;
+            border-radius: 16px;
+        }
+        .product-info{
+            margin: 24px 24px 0 24px;
+        }
+
+        .product-info p:nth-child(1){
+            color: var(--black);
+            font-size: var(--lg);
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 4px;
+
+        }
+
+        .product-info p:nth-child(2){
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            margin-top: 3px;
+            margin-bottom: 36px;
+        }
+
+        .product-info p:nth-child(3){
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 48px;
+
+        }
+
+        .primary-button{
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--white);
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        .add-to-cart-button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        @media (max-width: 640px) {
+            .product-detail{
+                width: 100%;
+            }
+        }
+       
+
+    </style>
+</head>
+<body>
+   <aside class="product-detail">
+        <img src="./icons/icon_close.png" alt="close simbol">
+        <img src="./accets/hogwarts_legacy.jpg" alt="Hogwarts Legacy">
+        <div class="product-info">
+            <p>$ 1699.00</p>
+            <p>Hogwarts Legacy</p>
+            <p>Hogwarts Legacy is a 2023 action role-playing game developed 
+            by Avalanche Software and published by Warner Bros. Games under 
+            its Portkey Games label. The game is set in the Wizarding World 
+            universe, taking place in the late 1800s, a century prior to the 
+            events chronicled in the Harry Potter novels.
+            </p>
+            <button class="primary-button add-to-cart-button" >
+                <img src="./icons/bt_add_to_cart.svg" alt="carrito compras">
+                Add to carrito
+            </button>
+        </div>
+   </aside>
+</body>
+</html>
